@@ -1,6 +1,7 @@
-require "tot_hikes/version"
+require "open-uri"
+require "nokogiri"
+require "pry"
 
-module TotHikes
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require "tot_hikes/version"
+require "tot_hikes/cli"
+require "tot_hikes/trails"
