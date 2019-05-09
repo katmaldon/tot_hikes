@@ -1,0 +1,39 @@
+class TotHikes 
+  
+attr_accessor :name :address :distance_from_nyc
+  @@all = [] 
+  
+  def initialize(name, address, distance_from_nyc)
+    @name = name 
+    @address = address
+    @distance_from_nyc = distance_from_nyc
+  end 
+  
+  def self.all 
+    @@all 
+  end 
+  
+  def save 
+  
+  end
+  
+  def self.scrape_trails 
+    #array trails with scrape data 
+  end 
+  
+  def self.scrape_one 
+    #actual scraped data for each trail 
+  end 
+  
+  def self.scrape_two
+    
+  end 
+  
+  def self.scrape_three 
+    
+  end 
+  
+  
+end 
+    
+    
