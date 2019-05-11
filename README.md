@@ -2,7 +2,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tot_hikes`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+TotHikes is a simple app to help you choose the next adventure for you and your little ones around NYC. All trails are easy to reach from the city and surrounding areas and provide challenges to hikers of all ages and abilities.  
 
 ## Installation
 
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Type ruby bin/tot_hikes into your terminal. Choose your favorite trail from a variety of options and plan a fun outdoors adventure for the whole family.
 
 ## Development
 
