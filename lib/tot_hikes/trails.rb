@@ -26,15 +26,30 @@ attr_accessor :name :address :distance_from_nyc
   end 
   
   def self.scrape_one 
-    #actual scraped data for each trail 
+    html = (open("https://kid101.com/10-kid-friendly-scenic-hikes-around-new-york-places-new-york/"))
+    doc = Nokogiri::HTML(html)
+    name = doc.css
+    miles = doc.css
+    distance_from_nyc = "Located approximately #{miles} miles from NYC"
+    hike_one = self.new(name, location, distance_from_nyc)
   end 
   
   def self.scrape_two
-    
+    html = (open("https://kid101.com/10-kid-friendly-scenic-hikes-around-new-york-places-new-york/"))
+    doc = Nokogiri::HTML(html)
+    name = doc.css
+    miles = doc.css
+    distance_from_nyc = "Located approximately #{miles} miles from NYC"
+    hike_one = self.new(name, location, distance_from_nyc)
   end 
   
   def self.scrape_three 
-    
+    html = (open("https://kid101.com/10-kid-friendly-scenic-hikes-around-new-york-places-new-york/"))
+    doc = Nokogiri::HTML(html)
+    name = doc.css
+    miles = doc.css
+    distance_from_nyc = "Located approximately #{miles} miles from NYC"
+    hike_one = self.new(name, location, distance_from_nyc)
   end 
   
   
