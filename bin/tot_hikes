@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 
 require "./lib/tot_hikes.rb"
 TotHikes::CLI.new.call   

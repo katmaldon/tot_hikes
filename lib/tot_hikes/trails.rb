@@ -56,3 +56,5 @@ attr_accessor :name :address :distance_from_nyc
 end 
     
     
+puts doc 
+    
