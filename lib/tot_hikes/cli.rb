@@ -29,7 +29,7 @@ class TotHikes::CLI
         trail = @trails.scrape_trails[input.to_i-1]
           puts "#{trail.name} - #{trail.location} - #{trail.distance_from_nyc}"
       elsif input == "selection" 
-            list_trails 
+        list_trails 
       else 
         puts "I'm sorry, that's not a valid entry. Type selection to see a list of trails or exit to exit the application."
       end 
