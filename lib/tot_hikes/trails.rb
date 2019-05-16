@@ -1,6 +1,6 @@
 class TotHikes::Hikes 
   
-attr_accessor :name :address :distance_from_nyc
+attr_accessor :name, :address, :distance_from_nyc
   @@all = [] 
   
   def initialize(name, address, distance_from_nyc)
@@ -29,6 +29,7 @@ attr_accessor :name :address :distance_from_nyc
     html = (open("https://kid101.com/10-kid-friendly-scenic-hikes-around-new-york-places-new-york/"))
     doc = Nokogiri::HTML(html)
     name = doc.css
+    location = doc.css
     miles = doc.css
     distance_from_nyc = "Located approximately #{miles} miles from NYC"
     hike_one = self.new(name, location, distance_from_nyc)
@@ -38,6 +39,7 @@ attr_accessor :name :address :distance_from_nyc
     html = (open("https://kid101.com/10-kid-friendly-scenic-hikes-around-new-york-places-new-york/"))
     doc = Nokogiri::HTML(html)
     name = doc.css
+    location = doc.css
     miles = doc.css
     distance_from_nyc = "Located approximately #{miles} miles from NYC"
     hike_one = self.new(name, location, distance_from_nyc)
@@ -47,6 +49,7 @@ attr_accessor :name :address :distance_from_nyc
     html = (open("https://kid101.com/10-kid-friendly-scenic-hikes-around-new-york-places-new-york/"))
     doc = Nokogiri::HTML(html)
     name = doc.css
+    location = doc.css
     miles = doc.css
     distance_from_nyc = "Located approximately #{miles} miles from NYC"
     hike_one = self.new(name, location, distance_from_nyc)
@@ -54,7 +57,5 @@ attr_accessor :name :address :distance_from_nyc
   
   
 end 
-    
-    
-puts doc 
+  
     
