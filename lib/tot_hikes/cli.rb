@@ -16,7 +16,7 @@ class TotHikes::CLI
     puts "Trail selection:"
     @trails = TotHikes::Hikes 
     @trails.scrape_trails.each_with_index do |trail, i=1|
-      puts "#{i+1}. #{trail.name}"
+      puts "#{trail.name}"
     end 
   end 
   
