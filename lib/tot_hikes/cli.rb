@@ -27,7 +27,7 @@ class TotHikes::CLI
     input = gets.strip.downcase
       if input.to_i > 0
         trail = @trails.scrape_trails[input.to_i-1]
-          puts "#{trail.name} - #{trail.location} - #{trail.distance_from_nyc}"
+          puts "#{trail.name} - #{trail.location}"
       elsif input == "selection" 
         list_trails 
       else 
