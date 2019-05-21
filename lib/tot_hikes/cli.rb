@@ -42,6 +42,10 @@ class TotHikes::CLI
         @trails.scrape_trails.each_with_index do |trail, i=1|
           puts "#{trail.location}"
         end 
+      elsif input == "random"
+        trail = @trails.scrape_trails
+        index = rand(1..trail.length)
+        puts "#{trail[index-1].address}"
       else 
         puts "I'm sorry, that's not a valid entry. Type 'selection' to see a list of trails or 'exit' to exit the application."
       end 
